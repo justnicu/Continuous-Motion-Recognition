@@ -1,0 +1,664 @@
+bits/locale_facets_nonio.h:1447:58: error: expected primary-expression before 'const'
+ 1447 |                                                          const char*);
+      |                                                          ^~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h: In constructor 'std::__cxx11::moneypunct_byname<_CharT, _Intl>::moneypunct_byname(const char*, std::size_t)':
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:1467:13: error: '__c_locale' was not declared in this scope; did you mean 'locale'?
+ 1467 |             __c_locale __tmp;
+      |             ^~~~~~~~~~
+      |             locale
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:1468:38: error: '__tmp' was not declared in this scope; did you mean '__tm'?
+ 1468 |             this->_S_create_c_locale(__tmp, __s);
+      |                                      ^~~~~
+      |                                      __tm
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h: At global scope:
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:1866:7: error: '__c_locale' does not name a type; did you mean 'locale'?
+ 1866 |       __c_locale                        _M_c_locale_messages;
+      |       ^~~~~~~~~~
+      |       locale
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:1895:26: error: expected ')' before '__cloc'
+ 1895 |       messages(__c_locale __cloc, const char* __s, size_t __refs = 0);
+      |               ~          ^~~~~~~
+      |                          )
+In file included from /home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:2064:
+../include-zephyr/bits/messages_members.h: In constructor 'std::__cxx11::messages<_CharT>::messages(std::size_t)':
+/home/z1/VSCode_repos/accImpulse/include-zephyr/bits/messages_members.h:44:8: error: '_M_c_locale_messages' was not declared in this scope; did you mean '_M_name_messages'?
+   44 |      { _M_c_locale_messages = _S_get_c_locale(); }
+      |        ^~~~~~~~~~~~~~~~~~~~
+      |        _M_name_messages
+/home/z1/VSCode_repos/accImpulse/include-zephyr/bits/messages_members.h:44:31: error: there are no arguments to '_S_get_c_locale' that depend on a template parameter, so a declaration of '_S_get_c_locale' must be available [-fpermissive]
+   44 |      { _M_c_locale_messages = _S_get_c_locale(); }
+      |                               ^~~~~~~~~~~~~~~
+../include-zephyr/bits/messages_members.h: At global scope:
+/home/z1/VSCode_repos/accImpulse/include-zephyr/bits/messages_members.h:47:32: error: expected constructor, destructor, or type conversion before '(' token
+   47 |      messages<_CharT>::messages(__c_locale, const char*, size_t __refs)
+      |                                ^
+../include-zephyr/bits/messages_members.h: In destructor 'virtual std::__cxx11::messages<_CharT>::~messages()':
+/home/z1/VSCode_repos/accImpulse/include-zephyr/bits/messages_members.h:60:27: error: '_M_c_locale_messages' was not declared in this scope; did you mean '_M_name_messages'?
+   60 |     { _S_destroy_c_locale(_M_c_locale_messages); }
+      |                           ^~~~~~~~~~~~~~~~~~~~
+      |                           _M_name_messages
+In file included from /home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:2067:
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/codecvt.h: At global scope:
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/codecvt.h:288:7: error: '__c_locale' does not name a type; did you mean 'locale'?
+  288 |       __c_locale                        _M_c_locale_codecvt;
+      |       ^~~~~~~~~~
+      |       locale
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/codecvt.h:300:25: error: expected ')' before '__cloc'
+  300 |       codecvt(__c_locale __cloc, size_t __refs = 0);
+      |              ~          ^~~~~~~
+      |                         )
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/codecvt.h: In constructor 'std::codecvt<_InternT, _ExternT, _StateT>::codecvt(std::size_t)':
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/codecvt.h:296:9: error: class 'std::codecvt<_InternT, _ExternT, _StateT>' does not have any field named '_M_c_locale_codecvt'
+  296 |         _M_c_locale_codecvt(0)
+      |         ^~~~~~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/codecvt.h: At global scope:
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/codecvt.h:353:7: error: '__c_locale' does not name a type; did you mean 'locale'?
+  353 |       __c_locale                        _M_c_locale_codecvt;
+      |       ^~~~~~~~~~
+      |       locale
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/codecvt.h:362:25: error: expected ')' before '__cloc'
+  362 |       codecvt(__c_locale __cloc, size_t __refs = 0);
+      |              ~          ^~~~~~~
+      |                         )
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/codecvt.h:416:7: error: '__c_locale' does not name a type; did you mean 'locale'?
+  416 |       __c_locale                        _M_c_locale_codecvt;
+      |       ^~~~~~~~~~
+      |       locale
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/codecvt.h:425:25: error: expected ')' before '__cloc'
+  425 |       codecvt(__c_locale __cloc, size_t __refs = 0);
+      |              ~          ^~~~~~~
+      |                         )
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/codecvt.h: In constructor 'std::codecvt_byname<char16_t, char, _mbstate_t>::codecvt_byname(const std::string&, std::size_t)':
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/codecvt.h:737:24: error: invalid use of incomplete type 'const std::string' {aka 'const class std::__cxx11::basic_string<char>'}
+  737 |       : codecvt_byname(__s.c_str(), __refs) { }
+      |                        ^~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/stringfwd.h:72:11: note: declaration of 'std::string' {aka 'class std::__cxx11::basic_string<char>'}
+   72 |     class basic_string;
+      |           ^~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/codecvt.h: In constructor 'std::codecvt_byname<char32_t, char, _mbstate_t>::codecvt_byname(const std::string&, std::size_t)':
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/codecvt.h:755:24: error: invalid use of incomplete type 'const std::string' {aka 'const class std::__cxx11::basic_string<char>'}
+  755 |       : codecvt_byname(__s.c_str(), __refs) { }
+      |                        ^~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/stringfwd.h:72:11: note: declaration of 'std::string' {aka 'class std::__cxx11::basic_string<char>'}
+   72 |     class basic_string;
+      |           ^~~~~~~~~~~~
+In file included from /home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:2069:
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc: In member function '_InIter std::__cxx11::money_get<_CharT, _InIter>::_M_extract(iter_type, iter_type, std::ios_base&, std::ios_base::iostate&, std::string&) const':
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:160:16: error: '__grouping_tmp' has incomplete type
+  160 |         string __grouping_tmp;
+      |                ^~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/stringfwd.h:72:11: note: declaration of 'std::string' {aka 'class std::__cxx11::basic_string<char>'}
+   72 |     class basic_string;
+      |           ^~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:173:16: error: '__res' has incomplete type
+  173 |         string __res;
+      |                ^~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/stringfwd.h:72:11: note: declaration of 'std::string' {aka 'class std::__cxx11::basic_string<char>'}
+   72 |     class basic_string;
+      |           ^~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:264:44: error: no match for 'operator+=' (operand types are 'std::string' {aka 'std::__cxx11::basic_string<char>'} and 'char')
+  264 |                             __grouping_tmp += static_cast<char>(__n);
+      |                             ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:173:16: error: '__res' has incomplete type
+  173 |         string __res;
+      |                ^~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/stringfwd.h:72:11: note: declaration of 'std::string' {aka 'class std::__cxx11::basic_string<char>'}
+   72 |     class basic_string;
+      |           ^~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:173:16: error: '__res' has incomplete type
+  173 |         string __res;
+      |                ^~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/stringfwd.h:72:11: note: declaration of 'std::string' {aka 'class std::__cxx11::basic_string<char>'}
+   72 |     class basic_string;
+      |           ^~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:173:16: error: '__res' has incomplete type
+  173 |         string __res;
+      |                ^~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/stringfwd.h:72:11: note: declaration of 'std::string' {aka 'class std::__cxx11::basic_string<char>'}
+   72 |     class basic_string;
+      |           ^~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:314:62: error: incomplete type 'std::string' {aka 'std::__cxx11::basic_string<char>'} used in nested name specifier
+  314 |                 const bool __only_zeros = __first == string::npos;
+      |                                                              ^~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:173:16: error: '__res' has incomplete type
+  173 |         string __res;
+      |                ^~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/stringfwd.h:72:11: note: declaration of 'std::string' {aka 'class std::__cxx11::basic_string<char>'}
+   72 |     class basic_string;
+      |           ^~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:173:16: error: '__res' has incomplete type
+  173 |         string __res;
+      |                ^~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/stringfwd.h:72:11: note: declaration of 'std::string' {aka 'class std::__cxx11::basic_string<char>'}
+   72 |     class basic_string;
+      |           ^~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:320:36: error: no match for 'operator[]' (operand types are 'std::string' {aka 'std::__cxx11::basic_string<char>'} and 'int')
+  320 |             if (__negative && __res[0] != '0')
+      |                                    ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:173:16: error: '__res' has incomplete type
+  173 |         string __res;
+      |                ^~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/stringfwd.h:72:11: note: declaration of 'std::string' {aka 'class std::__cxx11::basic_string<char>'}
+   72 |     class basic_string;
+      |           ^~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:173:16: error: '__res' has incomplete type
+  173 |         string __res;
+      |                ^~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/stringfwd.h:72:11: note: declaration of 'std::string' {aka 'class std::__cxx11::basic_string<char>'}
+   72 |     class basic_string;
+      |           ^~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:160:16: error: '__grouping_tmp' has incomplete type
+  160 |         string __grouping_tmp;
+      |                ^~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/stringfwd.h:72:11: note: declaration of 'std::string' {aka 'class std::__cxx11::basic_string<char>'}
+   72 |     class basic_string;
+      |           ^~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:327:32: error: no match for 'operator+=' (operand types are 'std::string' {aka 'std::__cxx11::basic_string<char>'} and 'char')
+  327 |                 __grouping_tmp += static_cast<char>(__testdecfound ? __last_pos
+      |                 ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  328 |                                                                    : __n);
+      |                                                                    ~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc: In member function 'virtual _InIter std::__cxx11::money_get<_CharT, _InIter>::do_get(iter_type, iter_type, bool, std::ios_base&, std::ios_base::iostate&, long double&) const':
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:374:14: error: '__str' has incomplete type
+  374 |       string __str;
+      |              ^~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/stringfwd.h:72:11: note: declaration of 'std::string' {aka 'class std::__cxx11::basic_string<char>'}
+   72 |     class basic_string;
+      |           ^~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:377:58: error: there are no arguments to '_S_get_c_locale' that depend on a template parameter, so a declaration of '_S_get_c_locale' must be available [-fpermissive]
+  377 |       std::__convert_to_v(__str.c_str(), __units, __err, _S_get_c_locale());
+      |                                                          ^~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc: In member function 'virtual _InIter std::__cxx11::money_get<_CharT, _InIter>::do_get(iter_type, iter_type, bool, std::ios_base&, std::ios_base::iostate&, string_type&) const':
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:387:32: error: invalid use of incomplete type 'std::string' {aka 'class std::__cxx11::basic_string<char>'}
+  387 |       typedef typename string::size_type                  size_type;
+      |                                ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/stringfwd.h:72:11: note: declaration of 'std::string' {aka 'class std::__cxx11::basic_string<char>'}
+   72 |     class basic_string;
+      |           ^~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:392:14: error: '__str' has incomplete type
+  392 |       string __str;
+      |              ^~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/stringfwd.h:72:11: note: declaration of 'std::string' {aka 'class std::__cxx11::basic_string<char>'}
+   72 |     class basic_string;
+      |           ^~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:392:14: error: '__str' has incomplete type
+  392 |       string __str;
+      |              ^~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/stringfwd.h:72:11: note: declaration of 'std::string' {aka 'class std::__cxx11::basic_string<char>'}
+   72 |     class basic_string;
+      |           ^~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:392:14: error: '__str' has incomplete type
+  392 |       string __str;
+      |              ^~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/stringfwd.h:72:11: note: declaration of 'std::string' {aka 'class std::__cxx11::basic_string<char>'}
+   72 |     class basic_string;
+      |           ^~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc: In member function 'virtual _OutIter std::__cxx11::money_put<_CharT, _OutIter>::do_put(iter_type, bool, std::ios_base&, char_type, long double) const':
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:604:24: error: '__convert_from_v' is not a member of 'std'; did you mean '__convert_to_v'?
+  604 |       int __len = std::__convert_from_v(_S_get_c_locale(), __cs, __cs_size,
+      |                        ^~~~~~~~~~~~~~~~
+      |                        __convert_to_v
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:604:41: error: there are no arguments to '_S_get_c_locale' that depend on a template parameter, so a declaration of '_S_get_c_locale' must be available [-fpermissive]
+  604 |       int __len = std::__convert_from_v(_S_get_c_locale(), __cs, __cs_size,
+      |                                         ^~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:611:24: error: '__convert_from_v' is not a member of 'std'; did you mean '__convert_to_v'?
+  611 |           __len = std::__convert_from_v(_S_get_c_locale(), __cs, __cs_size,
+      |                        ^~~~~~~~~~~~~~~~
+      |                        __convert_to_v
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:611:41: error: there are no arguments to '_S_get_c_locale' that depend on a template parameter, so a declaration of '_S_get_c_locale' must be available [-fpermissive]
+  611 |           __len = std::__convert_from_v(_S_get_c_locale(), __cs, __cs_size,
+      |                                         ^~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc: At global scope:
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1684:72: error: wrong number of template arguments (1, should be 2)
+ 1684 |   extern template class _GLIBCXX_NAMESPACE_LDBL_OR_CXX11 money_get<char>;
+      |                                                                        ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:1506:11: note: provided for 'template<class _CharT, class _InIter> class std::__cxx11::money_get'
+ 1506 |     class money_get : public locale::facet
+      |           ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1685:72: error: wrong number of template arguments (1, should be 2)
+ 1685 |   extern template class _GLIBCXX_NAMESPACE_LDBL_OR_CXX11 money_put<char>;
+      |                                                                        ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:1667:11: note: provided for 'template<class _CharT, class _OutIter> class std::__cxx11::money_put'
+ 1667 |     class money_put : public locale::facet
+      |           ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1687:38: error: wrong number of template arguments (1, should be 2)
+ 1687 |   extern template class time_put<char>;
+      |                                      ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:835:11: note: provided for 'template<class _CharT, class _OutIter> class std::time_put'
+  835 |     class time_put : public locale::facet
+      |           ^~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1688:45: error: wrong number of template arguments (1, should be 2)
+ 1688 |   extern template class time_put_byname<char>;
+      |                                             ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:931:11: note: provided for 'template<class _CharT, class _OutIter> class std::time_put_byname'
+  931 |     class time_put_byname : public time_put<_CharT, _OutIter>
+      |           ^~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1689:38: error: wrong number of template arguments (1, should be 2)
+ 1689 |   extern template class time_get<char>;
+      |                                      ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:398:11: note: provided for 'template<class _CharT, class _InIter> class std::__cxx11::time_get'
+  398 |     class time_get : public locale::facet, public time_base
+      |           ^~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1690:45: error: wrong number of template arguments (1, should be 2)
+ 1690 |   extern template class time_get_byname<char>;
+      |                                             ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:798:11: note: provided for 'template<class _CharT, class _InIter> class std::__cxx11::time_get_byname'
+  798 |     class time_get_byname : public time_get<_CharT, _InIter>
+      |           ^~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1703:25: error: wrong number of template arguments (1, should be 2)
+ 1703 |     const money_put<char>&
+      |                         ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:1667:11: note: provided for 'template<class _CharT, class _OutIter> class std::__cxx11::money_put'
+ 1667 |     class money_put : public locale::facet
+      |           ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1704:29: error: wrong number of template arguments (1, should be 2)
+ 1704 |     use_facet<money_put<char> >(const locale&);
+      |                             ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:1667:11: note: provided for 'template<class _CharT, class _OutIter> class std::__cxx11::money_put'
+ 1667 |     class money_put : public locale::facet
+      |           ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1704:5: error: template-id 'use_facet<<expression error> >' for 'const int& std::use_facet(const locale&)' does not match any template declaration
+ 1704 |     use_facet<money_put<char> >(const locale&);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_classes.tcc:132:5: note: candidate is: 'template<class _Facet> const _Facet& std::use_facet(const locale&)'
+  132 |     use_facet(const locale& __loc)
+      |     ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1707:25: error: wrong number of template arguments (1, should be 2)
+ 1707 |     const money_get<char>&
+      |                         ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:1506:11: note: provided for 'template<class _CharT, class _InIter> class std::__cxx11::money_get'
+ 1506 |     class money_get : public locale::facet
+      |           ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1708:29: error: wrong number of template arguments (1, should be 2)
+ 1708 |     use_facet<money_get<char> >(const locale&);
+      |                             ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:1506:11: note: provided for 'template<class _CharT, class _InIter> class std::__cxx11::money_get'
+ 1506 |     class money_get : public locale::facet
+      |           ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1708:5: error: template-id 'use_facet<<expression error> >' for 'const int& std::use_facet(const locale&)' does not match any template declaration
+ 1708 |     use_facet<money_get<char> >(const locale&);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_classes.tcc:132:5: note: candidate is: 'template<class _Facet> const _Facet& std::use_facet(const locale&)'
+  132 |     use_facet(const locale& __loc)
+      |     ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1715:24: error: wrong number of template arguments (1, should be 2)
+ 1715 |     const time_put<char>&
+      |                        ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:835:11: note: provided for 'template<class _CharT, class _OutIter> class std::time_put'
+  835 |     class time_put : public locale::facet
+      |           ^~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1716:28: error: wrong number of template arguments (1, should be 2)
+ 1716 |     use_facet<time_put<char> >(const locale&);
+      |                            ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:835:11: note: provided for 'template<class _CharT, class _OutIter> class std::time_put'
+  835 |     class time_put : public locale::facet
+      |           ^~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1716:5: error: template-id 'use_facet<<expression error> >' for 'const int& std::use_facet(const locale&)' does not match any template declaration
+ 1716 |     use_facet<time_put<char> >(const locale&);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_classes.tcc:132:5: note: candidate is: 'template<class _Facet> const _Facet& std::use_facet(const locale&)'
+  132 |     use_facet(const locale& __loc)
+      |     ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1719:24: error: wrong number of template arguments (1, should be 2)
+ 1719 |     const time_get<char>&
+      |                        ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:398:11: note: provided for 'template<class _CharT, class _InIter> class std::__cxx11::time_get'
+  398 |     class time_get : public locale::facet, public time_base
+      |           ^~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1720:28: error: wrong number of template arguments (1, should be 2)
+ 1720 |     use_facet<time_get<char> >(const locale&);
+      |                            ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:398:11: note: provided for 'template<class _CharT, class _InIter> class std::__cxx11::time_get'
+  398 |     class time_get : public locale::facet, public time_base
+      |           ^~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1720:5: error: template-id 'use_facet<<expression error> >' for 'const int& std::use_facet(const locale&)' does not match any template declaration
+ 1720 |     use_facet<time_get<char> >(const locale&);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_classes.tcc:132:5: note: candidate is: 'template<class _Facet> const _Facet& std::use_facet(const locale&)'
+  132 |     use_facet(const locale& __loc)
+      |     ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1728:30: error: wrong number of template arguments (1, should be 2)
+ 1728 |     has_facet<moneypunct<char> >(const locale&);
+      |                              ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:1062:11: note: provided for 'template<class _CharT, bool _Intl> class std::__cxx11::moneypunct'
+ 1062 |     class moneypunct : public locale::facet, public money_base
+      |           ^~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1728:5: error: template-id 'has_facet<<expression error> >' for 'bool std::has_facet(const locale&)' does not match any template declaration
+ 1728 |     has_facet<moneypunct<char> >(const locale&);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_classes.tcc:104:5: note: candidate is: 'template<class _Facet> bool std::has_facet(const locale&)'
+  104 |     has_facet(const locale& __loc) throw()
+      |     ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1732:29: error: wrong number of template arguments (1, should be 2)
+ 1732 |     has_facet<money_put<char> >(const locale&);
+      |                             ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:1667:11: note: provided for 'template<class _CharT, class _OutIter> class std::__cxx11::money_put'
+ 1667 |     class money_put : public locale::facet
+      |           ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1732:5: error: template-id 'has_facet<<expression error> >' for 'bool std::has_facet(const locale&)' does not match any template declaration
+ 1732 |     has_facet<money_put<char> >(const locale&);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_classes.tcc:104:5: note: candidate is: 'template<class _Facet> bool std::has_facet(const locale&)'
+  104 |     has_facet(const locale& __loc) throw()
+      |     ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1736:29: error: wrong number of template arguments (1, should be 2)
+ 1736 |     has_facet<money_get<char> >(const locale&);
+      |                             ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:1506:11: note: provided for 'template<class _CharT, class _InIter> class std::__cxx11::money_get'
+ 1506 |     class money_get : public locale::facet
+      |           ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1736:5: error: template-id 'has_facet<<expression error> >' for 'bool std::has_facet(const locale&)' does not match any template declaration
+ 1736 |     has_facet<money_get<char> >(const locale&);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_classes.tcc:104:5: note: candidate is: 'template<class _Facet> bool std::has_facet(const locale&)'
+  104 |     has_facet(const locale& __loc) throw()
+      |     ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1744:28: error: wrong number of template arguments (1, should be 2)
+ 1744 |     has_facet<time_put<char> >(const locale&);
+      |                            ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:835:11: note: provided for 'template<class _CharT, class _OutIter> class std::time_put'
+  835 |     class time_put : public locale::facet
+      |           ^~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1744:5: error: template-id 'has_facet<<expression error> >' for 'bool std::has_facet(const locale&)' does not match any template declaration
+ 1744 |     has_facet<time_put<char> >(const locale&);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_classes.tcc:104:5: note: candidate is: 'template<class _Facet> bool std::has_facet(const locale&)'
+  104 |     has_facet(const locale& __loc) throw()
+      |     ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1748:28: error: wrong number of template arguments (1, should be 2)
+ 1748 |     has_facet<time_get<char> >(const locale&);
+      |                            ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:398:11: note: provided for 'template<class _CharT, class _InIter> class std::__cxx11::time_get'
+  398 |     class time_get : public locale::facet, public time_base
+      |           ^~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1748:5: error: template-id 'has_facet<<expression error> >' for 'bool std::has_facet(const locale&)' does not match any template declaration
+ 1748 |     has_facet<time_get<char> >(const locale&);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_classes.tcc:104:5: note: candidate is: 'template<class _Facet> bool std::has_facet(const locale&)'
+  104 |     has_facet(const locale& __loc) throw()
+      |     ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1759:75: error: wrong number of template arguments (1, should be 2)
+ 1759 |   extern template class _GLIBCXX_NAMESPACE_LDBL_OR_CXX11 money_get<wchar_t>;
+      |                                                                           ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:1506:11: note: provided for 'template<class _CharT, class _InIter> class std::__cxx11::money_get'
+ 1506 |     class money_get : public locale::facet
+      |           ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1760:75: error: wrong number of template arguments (1, should be 2)
+ 1760 |   extern template class _GLIBCXX_NAMESPACE_LDBL_OR_CXX11 money_put<wchar_t>;
+      |                                                                           ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:1667:11: note: provided for 'template<class _CharT, class _OutIter> class std::__cxx11::money_put'
+ 1667 |     class money_put : public locale::facet
+      |           ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1762:41: error: wrong number of template arguments (1, should be 2)
+ 1762 |   extern template class time_put<wchar_t>;
+      |                                         ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:835:11: note: provided for 'template<class _CharT, class _OutIter> class std::time_put'
+  835 |     class time_put : public locale::facet
+      |           ^~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1763:48: error: wrong number of template arguments (1, should be 2)
+ 1763 |   extern template class time_put_byname<wchar_t>;
+      |                                                ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:931:11: note: provided for 'template<class _CharT, class _OutIter> class std::time_put_byname'
+  931 |     class time_put_byname : public time_put<_CharT, _OutIter>
+      |           ^~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1764:41: error: wrong number of template arguments (1, should be 2)
+ 1764 |   extern template class time_get<wchar_t>;
+      |                                         ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:398:11: note: provided for 'template<class _CharT, class _InIter> class std::__cxx11::time_get'
+  398 |     class time_get : public locale::facet, public time_base
+      |           ^~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1765:48: error: wrong number of template arguments (1, should be 2)
+ 1765 |   extern template class time_get_byname<wchar_t>;
+      |                                                ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:798:11: note: provided for 'template<class _CharT, class _InIter> class std::__cxx11::time_get_byname'
+  798 |     class time_get_byname : public time_get<_CharT, _InIter>
+      |           ^~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1778:28: error: wrong number of template arguments (1, should be 2)
+ 1778 |     const money_put<wchar_t>&
+      |                            ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:1667:11: note: provided for 'template<class _CharT, class _OutIter> class std::__cxx11::money_put'
+ 1667 |     class money_put : public locale::facet
+      |           ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1779:32: error: wrong number of template arguments (1, should be 2)
+ 1779 |     use_facet<money_put<wchar_t> >(const locale&);
+      |                                ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:1667:11: note: provided for 'template<class _CharT, class _OutIter> class std::__cxx11::money_put'
+ 1667 |     class money_put : public locale::facet
+      |           ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1779:5: error: template-id 'use_facet<<expression error> >' for 'const int& std::use_facet(const locale&)' does not match any template declaration
+ 1779 |     use_facet<money_put<wchar_t> >(const locale&);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_classes.tcc:132:5: note: candidate is: 'template<class _Facet> const _Facet& std::use_facet(const locale&)'
+  132 |     use_facet(const locale& __loc)
+      |     ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1782:28: error: wrong number of template arguments (1, should be 2)
+ 1782 |     const money_get<wchar_t>&
+      |                            ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:1506:11: note: provided for 'template<class _CharT, class _InIter> class std::__cxx11::money_get'
+ 1506 |     class money_get : public locale::facet
+      |           ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1783:32: error: wrong number of template arguments (1, should be 2)
+ 1783 |     use_facet<money_get<wchar_t> >(const locale&);
+      |                                ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:1506:11: note: provided for 'template<class _CharT, class _InIter> class std::__cxx11::money_get'
+ 1506 |     class money_get : public locale::facet
+      |           ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1783:5: error: template-id 'use_facet<<expression error> >' for 'const int& std::use_facet(const locale&)' does not match any template declaration
+ 1783 |     use_facet<money_get<wchar_t> >(const locale&);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_classes.tcc:132:5: note: candidate is: 'template<class _Facet> const _Facet& std::use_facet(const locale&)'
+  132 |     use_facet(const locale& __loc)
+      |     ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1790:27: error: wrong number of template arguments (1, should be 2)
+ 1790 |     const time_put<wchar_t>&
+      |                           ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:835:11: note: provided for 'template<class _CharT, class _OutIter> class std::time_put'
+  835 |     class time_put : public locale::facet
+      |           ^~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1791:31: error: wrong number of template arguments (1, should be 2)
+ 1791 |     use_facet<time_put<wchar_t> >(const locale&);
+      |                               ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:835:11: note: provided for 'template<class _CharT, class _OutIter> class std::time_put'
+  835 |     class time_put : public locale::facet
+      |           ^~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1791:5: error: template-id 'use_facet<<expression error> >' for 'const int& std::use_facet(const locale&)' does not match any template declaration
+ 1791 |     use_facet<time_put<wchar_t> >(const locale&);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_classes.tcc:132:5: note: candidate is: 'template<class _Facet> const _Facet& std::use_facet(const locale&)'
+  132 |     use_facet(const locale& __loc)
+      |     ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1794:27: error: wrong number of template arguments (1, should be 2)
+ 1794 |     const time_get<wchar_t>&
+      |                           ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:398:11: note: provided for 'template<class _CharT, class _InIter> class std::__cxx11::time_get'
+  398 |     class time_get : public locale::facet, public time_base
+      |           ^~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1795:31: error: wrong number of template arguments (1, should be 2)
+ 1795 |     use_facet<time_get<wchar_t> >(const locale&);
+      |                               ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:398:11: note: provided for 'template<class _CharT, class _InIter> class std::__cxx11::time_get'
+  398 |     class time_get : public locale::facet, public time_base
+      |           ^~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1795:5: error: template-id 'use_facet<<expression error> >' for 'const int& std::use_facet(const locale&)' does not match any template declaration
+ 1795 |     use_facet<time_get<wchar_t> >(const locale&);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_classes.tcc:132:5: note: candidate is: 'template<class _Facet> const _Facet& std::use_facet(const locale&)'
+  132 |     use_facet(const locale& __loc)
+      |     ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1803:33: error: wrong number of template arguments (1, should be 2)
+ 1803 |     has_facet<moneypunct<wchar_t> >(const locale&);
+      |                                 ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:1062:11: note: provided for 'template<class _CharT, bool _Intl> class std::__cxx11::moneypunct'
+ 1062 |     class moneypunct : public locale::facet, public money_base
+      |           ^~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1803:5: error: template-id 'has_facet<<expression error> >' for 'bool std::has_facet(const locale&)' does not match any template declaration
+ 1803 |     has_facet<moneypunct<wchar_t> >(const locale&);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_classes.tcc:104:5: note: candidate is: 'template<class _Facet> bool std::has_facet(const locale&)'
+  104 |     has_facet(const locale& __loc) throw()
+      |     ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1807:32: error: wrong number of template arguments (1, should be 2)
+ 1807 |     has_facet<money_put<wchar_t> >(const locale&);
+      |                                ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:1667:11: note: provided for 'template<class _CharT, class _OutIter> class std::__cxx11::money_put'
+ 1667 |     class money_put : public locale::facet
+      |           ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1807:5: error: template-id 'has_facet<<expression error> >' for 'bool std::has_facet(const locale&)' does not match any template declaration
+ 1807 |     has_facet<money_put<wchar_t> >(const locale&);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_classes.tcc:104:5: note: candidate is: 'template<class _Facet> bool std::has_facet(const locale&)'
+  104 |     has_facet(const locale& __loc) throw()
+      |     ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1811:32: error: wrong number of template arguments (1, should be 2)
+ 1811 |     has_facet<money_get<wchar_t> >(const locale&);
+      |                                ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:1506:11: note: provided for 'template<class _CharT, class _InIter> class std::__cxx11::money_get'
+ 1506 |     class money_get : public locale::facet
+      |           ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1811:5: error: template-id 'has_facet<<expression error> >' for 'bool std::has_facet(const locale&)' does not match any template declaration
+ 1811 |     has_facet<money_get<wchar_t> >(const locale&);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_classes.tcc:104:5: note: candidate is: 'template<class _Facet> bool std::has_facet(const locale&)'
+  104 |     has_facet(const locale& __loc) throw()
+      |     ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1819:31: error: wrong number of template arguments (1, should be 2)
+ 1819 |     has_facet<time_put<wchar_t> >(const locale&);
+      |                               ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:835:11: note: provided for 'template<class _CharT, class _OutIter> class std::time_put'
+  835 |     class time_put : public locale::facet
+      |           ^~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1819:5: error: template-id 'has_facet<<expression error> >' for 'bool std::has_facet(const locale&)' does not match any template declaration
+ 1819 |     has_facet<time_put<wchar_t> >(const locale&);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_classes.tcc:104:5: note: candidate is: 'template<class _Facet> bool std::has_facet(const locale&)'
+  104 |     has_facet(const locale& __loc) throw()
+      |     ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1823:31: error: wrong number of template arguments (1, should be 2)
+ 1823 |     has_facet<time_get<wchar_t> >(const locale&);
+      |                               ^
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.h:398:11: note: provided for 'template<class _CharT, class _InIter> class std::__cxx11::time_get'
+  398 |     class time_get : public locale::facet, public time_base
+      |           ^~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_facets_nonio.tcc:1823:5: error: template-id 'has_facet<<expression error> >' for 'bool std::has_facet(const locale&)' does not match any template declaration
+ 1823 |     has_facet<time_get<wchar_t> >(const locale&);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/bits/locale_classes.tcc:104:5: note: candidate is: 'template<class _Facet> bool std::has_facet(const locale&)'
+  104 |     has_facet(const locale& __loc) throw()
+      |     ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/clocale:53:11: error: 'lconv' has not been declared in '::'
+   53 |   using ::lconv;
+      |           ^~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/clocale:54:11: error: 'setlocale' has not been declared in '::'
+   54 |   using ::setlocale;
+      |           ^~~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/clocale:55:11: error: 'localeconv' has not been declared in '::'
+   55 |   using ::localeconv;
+      |           ^~~~~~~~~~
+../include-zephyr/bits/c++locale.h: In function 'int std::__convert_from_v(int* const&, char*, int, const char*, ...)':
+../include-zephyr/bits/c++/home/z1/VSCode_repos/accImpulse/build/locale.h:60:24: error: 'setlocale' is not a member of 'std'; did you mean 'locale'?
+   60 |     char* __old = std::setlocale(LC_NUMERIC, 0);
+      |                        ^~~~~~~~~
+      |                        locale
+../include-zephyr/bits/c++/home/z1/VSCode_repos/accImpulse/build/locale.h:60:34: error: 'LC_NUMERIC' was not declared in this scope
+   60 |     char* __old = std::setlocale(LC_NUMERIC, 0);
+      |                                  ^~~~~~~~~~
+../include-zephyr/bits/c++/home/z1/VSCode_repos/accImpulse/build/locale.h:67:14: error: 'setlocale' is not a member of 'std'; did you mean 'locale'?
+   67 |         std::setlocale(LC_NUMERIC, "C");
+      |              ^~~~~~~~~
+      |              locale
+../include-zephyr/bits/c++/home/z1/VSCode_repos/accImpulse/build/locale.h:83:14: error: 'setlocale' is not a member of 'std'; did you mean 'locale'?
+   83 |         std::setlocale(LC_NUMERIC, __sav);
+      |              ^~~~~~~~~
+      |              locale
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/cstring: At global scope:
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/cstring:77:11: error: 'memchr' has not been declared in '::'
+   77 |   using ::memchr;
+      |           ^~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/cstring:78:11: error: 'memcmp' has not been declared in '::'
+   78 |   using ::memcmp;
+      |           ^~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/cstring:79:11: error: 'memcpy' has not been declared in '::'
+   79 |   using ::memcpy;
+      |           ^~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/cstring:80:11: error: 'memmove' has not been declared in '::'
+   80 |   using ::memmove;
+      |           ^~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/cstring:81:11: error: 'memset' has not been declared in '::'
+   81 |   using ::memset;
+      |           ^~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/cstring:82:11: error: 'strcat' has not been declared in '::'
+   82 |   using ::strcat;
+      |           ^~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/cstring:83:11: error: 'strcmp' has not been declared in '::'
+   83 |   using ::strcmp;
+      |           ^~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/cstring:84:11: error: 'strcoll' has not been declared in '::'
+   84 |   using ::strcoll;
+      |           ^~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/cstring:85:11: error: 'strcpy' has not been declared in '::'
+   85 |   using ::strcpy;
+      |           ^~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/cstring:86:11: error: 'strcspn' has not been declared in '::'
+   86 |   using ::strcspn;
+      |           ^~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/cstring:87:11: error: 'strerror' has not been declared in '::'
+   87 |   using ::strerror;
+      |           ^~~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/cstring:88:11: error: 'strlen' has not been declared in '::'
+   88 |   using ::strlen;
+      |           ^~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/cstring:89:11: error: 'strncat' has not been declared in '::'
+   89 |   using ::strncat;
+      |           ^~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/cstring:90:11: error: 'strncmp' has not been declared in '::'
+   90 |   using ::strncmp;
+      |           ^~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/cstring:91:11: error: 'strncpy' has not been declared in '::'
+   91 |   using ::strncpy;
+      |           ^~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/cstring:92:11: error: 'strspn' has not been declared in '::'
+   92 |   using ::strspn;
+      |           ^~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/cstring:93:11: error: 'strtok' has not been declared in '::'
+   93 |   using ::strtok;
+      |           ^~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/cstring:94:11: error: 'strxfrm' has not been declared in '::'
+   94 |   using ::strxfrm;
+      |           ^~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/cstring:95:11: error: 'strchr' has not been declared in '::'
+   95 |   using ::strchr;
+      |           ^~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/cstring:96:11: error: 'strpbrk' has not been declared in '::'
+   96 |   using ::strpbrk;
+      |           ^~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/cstring:97:11: error: 'strrchr' has not been declared in '::'
+   97 |   using ::strrchr;
+      |           ^~~~~~~
+/home/z1/ncs/toolchains/v2.2.0/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.1.0/cstring:98:11: error: 'strstr' has not been declared in '::'
+   98 |   using ::strstr;
+      |           ^~~~~~
+../continuous-motion-recognition/./edge-impulse-sdk/tensorflow/lite/kernels/internal/types.h: In copy constructor 'tflite::RuntimeShape::RuntimeShape(const tflite::RuntimeShape&)':
+/home/z1/VSCode_repos/accImpulse/continuous-motion-recognition/edge-impulse-sdk/tensorflow/lite/kernels/internal/types.h:193:10: error: 'memcpy' is not a member of 'std'; did you mean 'wmemcpy'?
+  193 |     std::memcpy(DimsData(), other.DimsData(), sizeof(int32_t) * size_);
+      |          ^~~~~~
+      |          wmemcpy
+../continuous-motion-recognition/./edge-impulse-sdk/tensorflow/lite/kernels/internal/types.h: In member function 'bool tflite::RuntimeShape::operator==(const tflite::RuntimeShape&) const':
+/home/z1/VSCode_repos/accImpulse/continuous-motion-recognition/edge-impulse-sdk/tensorflow/lite/kernels/internal/types.h:198:17: error: 'memcmp' is not a member of 'std'; did you mean 'wmemcmp'?
+  198 |            std::memcmp(DimsData(), comp.DimsData(), size_ * sizeof(int32_t)) ==
+      |                 ^~~~~~
+      |                 wmemcmp
+../continuous-motion-recognition/./edge-impulse-sdk/tensorflow/lite/kernels/internal/types.h: In member function 'void tflite::RuntimeShape::ReplaceWith(int, const int32_t*)':
+/home/z1/VSCode_repos/accImpulse/continuous-motion-recognition/edge-impulse-sdk/tensorflow/lite/kernels/internal/types.h:258:10: error: 'memcpy' is not a member of 'std'; did you mean 'wmemcpy'?
+  258 |     std::memcpy(dst_dims, dims_data, dimensions_count * sizeof(int32_t));
+      |          ^~~~~~
+      |          wmemcpy
+../continuous-motion-recognition/./edge-impulse-sdk/tensorflow/lite/kernels/internal/types.h: In constructor 'tflite::RuntimeShape::RuntimeShape(int, const tflite::RuntimeShape&, int)':
+/home/z1/VSCode_repos/accImpulse/continuous-motion-recognition/edge-impulse-sdk/tensorflow/lite/kernels/internal/types.h:314:10: error: 'memcpy' is not a member of 'std'; did you mean 'wmemcpy'?
+  314 |     std::memcpy(DimsData() + size_increase, shape.DimsData(),
+      |          ^~~~~~
+      |          wmemcpy
+ninja: build stopped: subcommand failed.
+FATAL ERROR: command exited with status 1: /home/z1/ncs/toolchains/v2.2.0/usr/local/bin/cmake --build /home/z1/VSCode_repos/accImpulse/build
+
+ *  The terminal process terminated with exit code: 1. 
+ *  Terminal will be reused by tasks, press any key to close it. 
